@@ -22,6 +22,7 @@ RUN apt-get update && \
         cron \
         mariadb-client \
         wget \
+        gosu \
         tzdata && \
     rm -rf /var/lib/apt/lists/*
 
