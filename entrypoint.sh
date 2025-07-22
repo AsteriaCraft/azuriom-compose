@@ -35,7 +35,7 @@ chmod -R 775 /var/www/html
 if [ -f "/var/www/html/composer.json" ]; then
     echo "Installing Composer dependencies…"
     cd /var/www/html
-    su-exec www-data composer install \
+    gosu www-data composer install \
         --no-dev --optimize-autoloader --no-interaction
 fi
 
