@@ -3,7 +3,7 @@ services:
     build: .
     container_name: azuriom-app
     ports:
-      - "8080:80"
+      - "8180:80"
     volumes:
       - azuriom_data:/var/www/html
       - ./logs:/var/log/nginx
