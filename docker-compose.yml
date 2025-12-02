@@ -7,13 +7,13 @@ services:
     ports:
       - "80" # expose only the container port
     volumes:
-      - azuriom_data:/var/www/html
+      - data:/var/www/html
       - ./logs:/var/log/nginx
     restart: unless-stopped
     networks:
       - dokploy-network
 volumes:
-  azuriom_data:
+  data:
 
 networks:
   dokploy-network:
