@@ -9,12 +9,6 @@ services:
     volumes:
       - azuriom_data:/var/www/html
       - ./logs:/var/log/nginx
-    environment:
-      DB_HOST: database # points to an external DB you manage
-      DB_PORT: 3306
-      DB_DATABASE: azuriom
-      DB_USERNAME: azuriom
-      DB_PASSWORD: azuriom_password
     restart: unless-stopped
     networks:
       - dokploy-network
